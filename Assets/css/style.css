@@ -1,0 +1,57 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.btn, #tryAgain, .viewLeaderboard {
+    background-color: hsl(200, 100%, 20%);
+    border: 1px solid hsl(200, 100%, 20%);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    border-color: black;
+    background-color: hsl(200, 50%, 50%);
+    cursor: pointer;
+}
+
+.start-btn {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
